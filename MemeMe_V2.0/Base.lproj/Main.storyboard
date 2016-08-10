@@ -97,17 +97,26 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tJr-ob-4gB">
                                             <rect key="frame" x="8" y="8" width="159" height="128"/>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUD-Oq-OJ9">
+                                            <rect key="frame" x="66" y="146" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="tJr-ob-4gB" firstAttribute="leading" secondItem="Hit-cg-q4j" secondAttribute="leadingMargin" id="CIQ-Oa-6Tf"/>
-                                    <constraint firstItem="tJr-ob-4gB" firstAttribute="trailing" secondItem="Hit-cg-q4j" secondAttribute="trailingMargin" id="TQh-cc-pCp"/>
-                                    <constraint firstItem="tJr-ob-4gB" firstAttribute="top" secondItem="Hit-cg-q4j" secondAttribute="topMargin" id="XxG-le-5eR"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="tJr-ob-4gB" secondAttribute="bottom" constant="31" id="hEq-q0-588"/>
+                                    <constraint firstItem="tJr-ob-4gB" firstAttribute="trailing" secondItem="Hit-cg-q4j" secondAttribute="trailingMargin" id="1v3-q8-1sF"/>
+                                    <constraint firstItem="tJr-ob-4gB" firstAttribute="top" secondItem="Hit-cg-q4j" secondAttribute="topMargin" id="8ai-gb-DyM"/>
+                                    <constraint firstItem="jUD-Oq-OJ9" firstAttribute="bottom" secondItem="Hit-cg-q4j" secondAttribute="bottomMargin" id="F4C-Sb-9Se"/>
+                                    <constraint firstItem="jUD-Oq-OJ9" firstAttribute="top" secondItem="tJr-ob-4gB" secondAttribute="bottom" constant="10" id="f6A-Zd-dZY"/>
+                                    <constraint firstItem="tJr-ob-4gB" firstAttribute="centerX" secondItem="jUD-Oq-OJ9" secondAttribute="centerX" id="hIx-7z-zqy"/>
+                                    <constraint firstItem="tJr-ob-4gB" firstAttribute="leading" secondItem="Hit-cg-q4j" secondAttribute="leadingMargin" id="nJ2-tw-hCh"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="collectionImage" destination="tJr-ob-4gB" id="2d9-sp-eOJ"/>
+                                    <outlet property="collectionLabel" destination="jUD-Oq-OJ9" id="N6r-t7-OIV"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -345,6 +354,6 @@
         <image name="Table" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="f15-5J-vjV"/>
+        <segue reference="z1h-jm-2R8"/>
     </inferredMetricsTieBreakers>
 </document>

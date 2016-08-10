@@ -43,8 +43,11 @@ class MemeCollectionViewController : UICollectionViewController {
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("MemeCollectionViewCell", forIndexPath: indexPath) as! MemeCollectionViewCell
         let meme = memes[indexPath.item]
-        let imageView = UIImageView(image: meme.memedImage)
-        cell.backgroundView = imageView
+        // Set the name and image
+        cell.collectionLabel!.text = "\(meme.topTextField) \(meme.bottomTextField)"
+        cell.collectionImage!.image = meme.memedImage
+        //let imageView = UIImageView(image: meme.memedImage)
+        //cell.backgroundView = imageView
         
         return cell
     }

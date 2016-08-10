@@ -42,13 +42,6 @@ class MemeTableViewController : UIViewController{
     
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        //let memeDetailsVC:MemeCreatorVC = self.storyboard?.instantiateViewControllerWithIdentifier("memeDetails") as! MemeCreatorVC;
-        //memeDetailsVC.hidesBottomBarWhenPushed = true;
-        //memeDetailsVC.meme = self.memes[indexPath.row];
-        //self.navigationController?.pushViewController(memeDetailsVC, animated: true);
-        
-        //let object: AnyObject = storyboard!.instantiateViewControllerWithIdentifier("MemeDetailViewController")
-        //let detailVC = object as! MemeDetailViewController
         let detailVC: MemeDetailViewController = self.storyboard?.instantiateViewControllerWithIdentifier("MemeDetailViewController") as! MemeDetailViewController
         
         /* Pass the data from the selected row to the detail view and present it */
